@@ -1,9 +1,8 @@
-import { useProject } from "@/hooks/useProject";
 import { ScrollArea } from "@radix-ui/react-scroll-area";
 import { Separator } from "@radix-ui/react-separator";
 
 const Host = () => {
-  const { activeProject } = useProject();
+  // const { activeProject } = useProject();
 
   return (
     <div className="flex flex-1 flex-col gap-4 p-4 pt-0">

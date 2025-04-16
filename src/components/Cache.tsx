@@ -25,14 +25,6 @@ const Cache = () => {
     { time: string; Usage: number }[]
   >([]);
 
-  const [currDataReq, setCurrDataReq] = useState<{
-    scope: number;
-    interval: number;
-  }>({
-    scope: 21600,
-    interval: 3600,
-  });
-
   const [backg, setbackground] = useState(
     activeProject?.isActiveCache ? "bg-green-900" : "bg-muted/50"
   );
@@ -89,8 +81,11 @@ const Cache = () => {
   };
   useEffect(() => {
     setcurrProject(activeProject);
-    getDownloadAnalytics(currDataReq);
-  }, [activeTab, activeProject, currDataReq]);
+    getDownloadAnalytics({
+      scope: 21600,
+      interval: 3600,
+    });
+  }, [activeTab, activeProject]);
 
   const setToogle = async (value: boolean) => {
     try {
