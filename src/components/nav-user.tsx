@@ -1,10 +1,9 @@
-import { BadgeCheck, ChevronsUpDown, LogOut, Settings } from "lucide-react";
+import { ChevronsUpDown, LogOut, Settings } from "lucide-react";
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
   DropdownMenu,
   DropdownMenuContent,
-  DropdownMenuGroup,
   DropdownMenuItem,
   DropdownMenuLabel,
   DropdownMenuSeparator,
@@ -16,9 +15,9 @@ import {
   SidebarMenuItem,
   useSidebar,
 } from "@/components/ui/sidebar";
-import { Dialog, DialogContent, DialogTrigger } from "@radix-ui/react-dialog";
-import { Button } from "./ui/button";
-import { SignOutButton, UserProfile } from "@clerk/clerk-react";
+// import { Dialog, DialogContent, DialogTrigger } from "@radix-ui/react-dialog";
+// import { Button } from "./ui/button";
+import { SignOutButton } from "@clerk/clerk-react";
 import { useNavigate } from "react-router";
 
 export function NavUser({

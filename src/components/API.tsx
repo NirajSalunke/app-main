@@ -18,6 +18,7 @@ const API = () => {
 
   useEffect(() => {
     setCurrProj(activeProject);
+    console.log(currProj);
   }, [activeTab, activeProject]);
 
   const handleCopy = () => {

@@ -1,6 +1,6 @@
 import { useUser } from "@clerk/clerk-react";
 import axios from "axios";
-import React, {
+import {
   createContext,
   useContext,
   useState,

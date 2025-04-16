@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import { useMemo } from "react";
 import { useNavigate } from "react-router";
 import { FlipText } from "../magicui/flip-text";
 import { Button } from "./button";

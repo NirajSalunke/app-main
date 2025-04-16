@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router";
 // import DashBoard from "./pages/dashboard";
 import Home from "./pages/Home";
 import DashBoard from "./pages/DashBoard";
-import { SignedIn, SignedOut, UserProfile } from "@clerk/clerk-react";
+import { SignedIn, SignedOut } from "@clerk/clerk-react";
 import PlsSign from "./components/ui/PlsSign";
 import NotFound from "./components/ui/NotFound";
 import Setting from "./pages/Setting";

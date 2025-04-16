@@ -7,7 +7,7 @@ export function CodeBlockCopy({
   name,
 }: {
   code: string;
-  lines?: [];
+  lines: [number, number, number] | [number, number];
   lang?: string;
   name?: string;
 }) {

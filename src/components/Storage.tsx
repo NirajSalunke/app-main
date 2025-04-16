@@ -39,14 +39,6 @@ const Storage = () => {
     { time: string; Usage: number }[]
   >([]);
 
-  const [currDataReq, setCurrDataReq] = useState<{
-    scope: number;
-    interval: number;
-  }>({
-    scope: 21600,
-    interval: 3600,
-  });
-
   const [backg, setbackground] = useState(
     activeProject?.isActiveStorage ? "bg-green-900" : "bg-muted/50"
   );
@@ -104,9 +96,12 @@ const Storage = () => {
   useEffect(() => {
     setcurrProject(activeProject);
     if (activeProject) {
-      getDownloadAnalytics(currDataReq);
+      getDownloadAnalytics({
+        scope: 21600,
+        interval: 3600,
+      });
     }
-  }, [activeTab, activeProject, currDataReq]);
+  }, [activeTab, activeProject]);
 
   const setToogle = async (value: boolean) => {
     try {

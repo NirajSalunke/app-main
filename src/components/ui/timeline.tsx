@@ -1,8 +1,5 @@
 import { useScroll, useTransform, motion } from "motion/react";
 import React, { useEffect, useRef, useState } from "react";
-import { FlipText } from "../magicui/flip-text";
-import { ArrowRight } from "lucide-react";
-import { MorphingText } from "../magicui/morphing-text";
 
 interface TimelineEntry {
   title: string;
