@@ -40,8 +40,8 @@ const Cache = () => {
         }/${dataReq.scope}/${dataReq.interval}`,
         {
           headers: {
-            clerkID: user.user?.id,
-            secret_key: import.meta.env.VITE_SECRET_KEY,
+            ClerkID: user.user?.id,
+            SecretKey: import.meta.env.VITE_SECRET_KEY,
           },
         }
       );
@@ -52,8 +52,8 @@ const Cache = () => {
         }/${dataReq.scope}/${dataReq.interval}`,
         {
           headers: {
-            clerkID: user.user?.id,
-            secret_key: import.meta.env.VITE_SECRET_KEY,
+            ClerkID: user.user?.id,
+            SecretKey: import.meta.env.VITE_SECRET_KEY,
           },
         }
       );
@@ -98,8 +98,8 @@ const Cache = () => {
         },
         {
           headers: {
-            clerkID: user.user?.id,
-            secret_key: import.meta.env.VITE_SECRET_KEY,
+            ClerkID: user.user?.id,
+            SecretKey: import.meta.env.VITE_SECRET_KEY,
           },
         }
       );

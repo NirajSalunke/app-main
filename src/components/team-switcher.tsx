@@ -42,8 +42,8 @@ export function TeamSwitcher({ onChange }: { onChange: (e: Project) => void }) {
         },
         {
           headers: {
-            clerkID: user.user?.id,
-            secret_key: import.meta.env.VITE_SECRET_KEY,
+            ClerkID: user.user?.id,
+            SecretKey: import.meta.env.VITE_SECRET_KEY,
           },
         }
       );
