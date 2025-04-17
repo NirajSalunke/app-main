@@ -42,6 +42,7 @@ const Cache = () => {
           headers: {
             ClerkID: user.user?.id,
             SecretKey: import.meta.env.VITE_SECRET_KEY,
+            XTimezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
           },
         }
       );
@@ -54,6 +55,7 @@ const Cache = () => {
           headers: {
             ClerkID: user.user?.id,
             SecretKey: import.meta.env.VITE_SECRET_KEY,
+            XTimezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
           },
         }
       );

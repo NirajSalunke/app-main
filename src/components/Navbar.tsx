@@ -23,7 +23,7 @@ const Navbar = () => {
         {
           ClerkID: user.user?.id,
           Email: user.user?.emailAddresses[0].emailAddress,
-          Password: import.meta.env.VITE_SECRET_KEY,
+          Password: "",
         },
         {
           headers: {

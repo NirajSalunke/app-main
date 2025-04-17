@@ -56,6 +56,7 @@ const Storage = () => {
           headers: {
             ClerkID: user.user?.id,
             SecretKey: import.meta.env.VITE_SECRET_KEY,
+            XTimezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
           },
         }
       );
@@ -68,6 +69,7 @@ const Storage = () => {
           headers: {
             ClerkID: user.user?.id,
             SecretKey: import.meta.env.VITE_SECRET_KEY,
+            XTimezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
           },
         }
       );
@@ -114,8 +116,8 @@ const Storage = () => {
         },
         {
           headers: {
-            clerkID: user.user?.id,
-            secret_key: import.meta.env.VITE_SECRET_KEY,
+            ClerkID: user.user?.id,
+            SecretKey: import.meta.env.VITE_SECRET_KEY,
           },
         }
       );
