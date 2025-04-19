@@ -1,5 +1,5 @@
 // import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 // import DashBoard from "./pages/dashboard";
 import Home from "./pages/Home";
 import DashBoard from "./pages/DashBoard";
