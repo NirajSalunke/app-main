@@ -3,7 +3,7 @@ import { CodeBlockCopy } from "./CodeBlockCopy";
 import { codeInit } from "@/constants/code-snippet";
 import { SignedIn, SignedOut, SignInButton } from "@clerk/clerk-react";
 import { Button } from "./ui/button";
-import { useNavigate } from "react-router";
+import { useNavigate } from "react-router-dom";
 import { IconArrowRight } from "@tabler/icons-react";
 
 export function LandingLast() {

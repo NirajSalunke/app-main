@@ -6,7 +6,7 @@ import {
   useUser,
 } from "@clerk/clerk-react";
 import { Button } from "./ui/button";
-import { useNavigate } from "react-router";
+import { useNavigate } from "react-router-dom";
 import { FlipText } from "./magicui/flip-text";
 import { useEffect } from "react";
 import axios from "axios";

@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { SignedIn, SignedOut } from "@clerk/clerk-react";
-import { useNavigate } from "react-router";
+import { useNavigate } from "react-router-dom";
 
 const Setting = () => {
   const navigate = useNavigate();

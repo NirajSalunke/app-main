@@ -1,5 +1,5 @@
 // import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 // import DashBoard from "./pages/dashboard";
 import Home from "./pages/Home";
 import DashBoard from "./pages/DashBoard";
@@ -10,26 +10,24 @@ import Setting from "./pages/Setting";
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route
-          path="/dashboard/*"
-          element={
-            <>
-              <SignedIn>
-                <DashBoard />
-              </SignedIn>
-              <SignedOut>
-                <PlsSign />
-              </SignedOut>
-            </>
-          }
-        />
-        <Route path="/settings" element={<Setting />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route
+        path="/dashboard/*"
+        element={
+          <>
+            <SignedIn>
+              <DashBoard />
+            </SignedIn>
+            <SignedOut>
+              <PlsSign />
+            </SignedOut>
+          </>
+        }
+      />
+      <Route path="/settings" element={<Setting />} />
+      <Route path="*" element={<NotFound />} />
+    </Routes>
   );
 };
 
