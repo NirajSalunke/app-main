@@ -1,9 +1,15 @@
 {
-  "redirects": [
+  "builds": [
     {
-      "source": "/(.*)",
-      "destination": "/",
-      "permanent": false
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "dist" }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ]
 }
